@@ -12,6 +12,7 @@ import { WarningComponent } from './warning/warning.component';
 import { SuccessComponent } from './success/success.component';
 import { AssignmentComponent } from './assignment/assignment.component';
 import { NumberPipe } from './number.pipe';
+import { HighlighterDirective } from './highlighter.directive';
 
 
 @NgModule({
@@ -20,7 +21,7 @@ import { NumberPipe } from './number.pipe';
     WarningComponent,
     SuccessComponent,
     AssignmentComponent,
-    [ AscendingPipe, DescendingPipe,NumberPipe]
+    [ AscendingPipe, DescendingPipe,NumberPipe,HighlighterDirective]
   ],
   imports: [
     BrowserModule,
