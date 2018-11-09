@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-assignment',
@@ -6,8 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./assignment.component.css']
 })
 export class AssignmentComponent implements OnInit {
+  @Input() buttonValue:String;
+  // @Input() show1:boolean;
+  @Input() qwert:Function;
 
-  constructor() { }
+
+  constructor() {
+   }
 
   ngOnInit() {
   }

@@ -1,7 +1,5 @@
-;
 import { DescendingPipe } from './descending.pipe';
 import { AscendingPipe } from './ascending.pipe';
-// import { Custompipe2Pipe } from './custompipe2.pipe';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms'
@@ -13,6 +11,7 @@ import { SuccessComponent } from './success/success.component';
 import { AssignmentComponent } from './assignment/assignment.component';
 import { NumberPipe } from './number.pipe';
 import { HighlighterDirective } from './highlighter.directive';
+import { FormsComponent } from './forms/forms.component';
 
 
 @NgModule({
@@ -21,7 +20,7 @@ import { HighlighterDirective } from './highlighter.directive';
     WarningComponent,
     SuccessComponent,
     AssignmentComponent,
-    [ AscendingPipe, DescendingPipe,NumberPipe,HighlighterDirective]
+    [ AscendingPipe, DescendingPipe,NumberPipe,HighlighterDirective,FormsComponent]
   ],
   imports: [
     BrowserModule,

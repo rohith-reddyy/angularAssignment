@@ -22,10 +22,10 @@ r=this.z+10;
   ngOnInit() {
    let g:[number,string]=[10,"eqfef"];
     g[1]="hi";
-  }
-  click(){
     this.output.emit(this.name1+" is the sent name");
   }
+    
+
   ngOnChanges(){
     console.log("ngonchanges");
   }
